@@ -34,13 +34,13 @@ Download the pretrained glove embedding from [here](https://github.com/stanfordn
 bash download_glove.sh
 ```
 
-## Extract the glove embedding for training.
+## Extract the glove embeddings for training.
 Run the following command to process the pretrained glove embedding for training the word embedding:
 ```bash
 python extract_vocab.py
 ```
 
-## Train
+## How To Train ?
 The training script is `train.py`. To see the detailed parameters for running:
 ```bash
 python train.py -h
@@ -68,7 +68,7 @@ Train a Seq2SQL model with Reinforcement Learning after pretraining
 python train.py --baseline --dataset 1 --rl
 ```
 
-## Test
+## How To Test ?
 The script for evaluation on the dev split and test split. The parameters for evaluation is roughly the same as the one used for training. For example, the commands for evaluating the models from above commands are:
 
 Test a trained SQLNet model with column attention
